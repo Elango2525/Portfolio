@@ -1,0 +1,32 @@
+/* Skills.css */
+.skills-container {
+    padding: 20px;
+  }
+  
+  .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .skill-item {
+    text-align: center;
+    margin: 8px;
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .skill-item:hover {
+    transform: scale(1.1); /* Increase the size on hover */
+  }
+  
+  .skill-item img {
+    width: 150px; /* Adjust the size of the images as needed */
+    margin-bottom: 8px;
+  }
+  
+  .skill-item span {
+    display: block;
+    font-size: 14px;
+  }
+  

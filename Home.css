@@ -1,0 +1,320 @@
+/* styles/Home.css */
+body {
+  margin: 0;
+  padding: 0;
+  background: url('https://cdn.wallpapersafari.com/57/69/P8pBqZ.png') no-repeat center center fixed;
+  
+  background-size: cover;
+  color: #fff;
+  font-family: "fantasy", sans-serif;
+}
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+/* styles/Home.css */
+/* ... (your existing styles) */
+
+.nav-link {
+  /* ... (your existing styles) */
+  transition: transform 0.3s ease-in-out; /* Add a transform transition */
+}
+
+/* Apply different transition delays for each nav-link */
+.nav-link:nth-child(1) { transition-delay: 0.1s; }
+.nav-link:nth-child(2) { transition-delay: 0.1s; }
+.nav-link:nth-child(3) { transition-delay: 0.1s; }
+.nav-link:nth-child(4) { transition-delay: 0.1s; }
+.nav-link:nth-child(5) { transition-delay: 0.1s; }
+.nav-link:nth-child(6) { transition-delay: 0.1s; }
+.nav-link:nth-child(7) { transition-delay: 0.1s; }
+.nav-link:nth-child(8) { transition-delay: 0.1s; }
+
+/* ... (your existing styles) */
+
+
+.nav-link {
+  color: whitesmoke; /* Change the font color to tomato */
+  font-weight: bold; /* Make the font bold */
+  font-size: 21px; /* Adjust the font size as needed */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a subtle shadow effect */
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  transition: color 0.3s ease-in-out;
+  /* Add more styles as per your preference */
+}
+
+.nav-link:hover {
+  color: #1ac2c7;
+}
+
+/* Media Query for Mobile View */
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    position: relative;
+    align-items: flex-start;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Add this to make it a positioning context for absolute positioning */
+}
+
+.profile-picture-container {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: 10px; /* Adjust the right position as needed */
+  align-self: flex-end; /* Align to the flex end */
+}
+
+.profile-picture {
+  width: 100px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  border-radius: 50%; /* Ensure it's a circle */
+}
+/* ... Your existing styles ... */
+
+/* Animation for blockquote */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 2;
+    transform: translateY(0);
+  }
+}
+
+/* Blockquote main style */
+.blockquote {
+  font-family: 'Barlow Condensed', sans-serif;
+  max-width: 620px;
+  margin: 80px 20px; 
+  /* Adjust margin as needed */
+  animation: fadeIn 1s ease-in-out; /* Apply the animation */
+}
+
+/* Blockquote header */
+.blockquote h1 {
+  font-family: 'Abril Fatface';
+  position: relative;
+  color: #e74848;
+  font-size: 2.8rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+/* Blockquote right double quotes */
+.blockquote h1:after {
+  content: "";
+  position: absolute;
+  border: 2px solid #e74848;
+  border-radius: 0 50px 0 0;
+  width: 60px;
+  height: 60px;
+  bottom: -62px;
+  right: 20px; /* Adjust the left position */
+  border-bottom: none;
+  border-left: none;
+  z-index: 3;
+}
+
+.blockquote h1:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  border: 6px solid #292a2b;
+  bottom: -3px;
+   /* Adjust the left position */
+  z-index: 2;
+}
+
+/* Increase header size after 600px */
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  /* Adjust left position for wider screens */
+  .blockquote h1:after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .blockquote h1:before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+/* Blockquote subheader */
+.blockquote h4 {
+  position: relative;
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+  padding-top: 15px;
+  z-index: 1;
+  margin-left: 20px; /* Adjust the left margin */
+  padding-left: 12px;
+}
+
+.blockquote h4:first-letter {
+  margin-left: -12px;
+}
+
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-section h3 {
+  font-size: 18px;
+}
+
+input {
+  padding: 8px;
+  margin-top: 8px;
+}
+
+button {
+  background-color: #fff;
+  color: #333;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
+}
+
+
+
+/* Add the following styles for the centered image */
+
+
+.footer {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+  color: #fff;
+}
+
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-option {
+  flex: 1;
+  max-width: 300px;
+  margin: 0 150px;
+}
+
+.footer-heading {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+
+.social-media-icons {
+  display: flex;
+  justify-content: space-around;
+  font-size: 24px;
+}
+
+.social-icon {
+  color: #fff;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #55acee; /* Change the color to the one suitable for your design */
+}
+
+
+.subscribe-btn {
+  background-color: #55acee;
+  color: #fff;
+  
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: #007bb5; /* Change the color to the one suitable for your design */
+}
